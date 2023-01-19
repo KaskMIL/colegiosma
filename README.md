@@ -22,8 +22,8 @@ To run a local copy of this project follow these simple steps.
 
 ### Setup
 
-    1. git clone https://github.com/KaskMIL/spacex-reservations.git
-    2. cd spacex-reservations
+    1. git clone git@github.com:KaskMIL/colegiosma.git
+    2. cd colegiosma
 
 ### Install
 
@@ -53,8 +53,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Special aknowledgment to [gregorio Vella](www.gregoirevella.com), the design of the project was inspired in his work.
-- <a href="https://www.flaticon.com/free-icons/">Flaticon</a>
 
 ## 📝 License
 
