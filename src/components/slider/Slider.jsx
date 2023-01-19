@@ -19,7 +19,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="py-10">
+    <section className="py-10 border text-center">
       <h2>SLIDER BANNERS</h2>
       <Slider {...settings}>
         <div className="bg-orange-500 flex items-center justify-center h-[200px]">Banner 1</div>
@@ -27,7 +27,7 @@ const Carousel = () => {
         <div className="bg-orange-500 flex items-center justify-center h-[200px]">Banner 3</div>
         <div className="bg-orange-500 flex items-center justify-center h-[200px]">Banner 4</div>
       </Slider>
-    </div>
+    </section>
   );
 };
 
