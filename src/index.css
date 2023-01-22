@@ -8,4 +8,8 @@
   .nav-hov {
     @apply hover:text-white hover:scale-110 cursor-pointer;
   }
+
+  .comp-icons {
+    @apply flex gap-5 items-center basis-1/2 px-[10px];
+  }
 }
