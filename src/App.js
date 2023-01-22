@@ -1,6 +1,7 @@
 import Header from './components/header/Header';
 import Carousel from './components/slider/Slider';
 import Niveles from './components/niveles/Niveles';
+import Competitions from './components/competitions/Competitions';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Carousel />
       <Niveles />
+      <Competitions />
     </div>
   );
 }
