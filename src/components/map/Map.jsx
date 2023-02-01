@@ -1,50 +1,39 @@
 /* eslint-disable no-new */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useRef } from 'react';
-import { Wrapper, Status } from '@googlemaps/react-wrapper';
+import { Wrapper } from '@googlemaps/react-wrapper';
 
-const render = (status) => {
-  if (status === Status.LOADING) {
-    return (
-      <h3>
-        {status}
-        ..
-      </h3>
-    );
-  }
-  if (status === Status.FAILURE) {
-    return (
-      <h3>
-        {status}
-        ...
-      </h3>
-    );
-  }
-  return null;
-};
+const render = (status) => (
+  <h1>{status}</h1>
+);
 
-const Map = (center, zoom) => {
+const mapApi = process.env.REACT_APP_MAPS_API;
+
+const Map = () => {
   const ref = useRef();
 
   useEffect(() => {
     new window.google.maps.Map(ref.current, {
-      center,
-      zoom,
+      center: { lat: -34.579884, lng: -58.73818 },
+      zoom: 19,
     });
   });
 
-  return <div ref={ref} id="map" className="h-screen w-full" />;
-};
-
-const MapComp = () => {
-  const center = { lat: -34.579884, lng: -58.73818 };
-  const zoom = 15;
-
   return (
-    <Wrapper apiKey="AIzaSyCw36mdxRiWa_iMquf3911tXqUT6tm-9yY" render={render}>
-      <h2 className="bg-gray-500 text-white font-bold text-center">Map</h2>
-      <Map center={center} zoom={zoom} />
-    </Wrapper>
+    <div ref={ref} id="map" className="h-[400px] w-[800px]" />
   );
 };
+
+const MapComp = () => (
+  <section className="bg-purple-300 h-screen flex flex-col justify-center items-center">
+    <div className="border">
+      <Wrapper apiKey={mapApi} render={render}>
+        <h2 className="bg-gray-500 text-white font-bold text-center">Map</h2>
+        <Map />
+      </Wrapper>
+    </div>
+  </section>
+);
 
 export default MapComp;
