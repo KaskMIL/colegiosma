@@ -16,12 +16,12 @@ const Map = () => {
   useEffect(() => {
     new window.google.maps.Map(ref.current, {
       center: { lat: -34.579884, lng: -58.73818 },
-      zoom: 19,
+      zoom: 18,
     });
   });
 
   return (
-    <div ref={ref} id="map" className="h-[400px] w-[800px]" />
+    <div ref={ref} id="map" className="h-[350px] w-[350px] md:h-[400px] md:w-[800px]" />
   );
 };
 
