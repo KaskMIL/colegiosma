@@ -2,7 +2,7 @@ import Header from './components/header/Header';
 import Carousel from './components/slider/Slider';
 import Niveles from './components/niveles/Niveles';
 import Competitions from './components/competitions/Competitions';
-import MapComp from './components/map/Map';
+import Contacto from './components/contact/Contacto';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Carousel />
       <Niveles />
       <Competitions />
-      <MapComp />
+      <Contacto />
     </div>
   );
 }

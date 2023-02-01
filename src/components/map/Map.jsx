@@ -26,10 +26,9 @@ const Map = () => {
 };
 
 const MapComp = () => (
-  <section className="bg-purple-300 h-screen flex flex-col justify-center items-center">
+  <section className="flex flex-col justify-center items-center">
     <div className="border">
       <Wrapper apiKey={mapApi} render={render}>
-        <h2 className="bg-gray-500 text-white font-bold text-center">Map</h2>
         <Map />
       </Wrapper>
     </div>
