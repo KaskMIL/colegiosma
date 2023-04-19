@@ -29,10 +29,10 @@ export default function NavBar() {
           }`}
         >
           <ul className='flex flex-col items-center justify-center space-y-8 md:flex-row md:space-x-6 md:space-y-0'>
-            <li className='nav-hov text-gray-600 hover:text-blue-600'>Inicio</li>
-            <li className='nav-hov text-gray-600 hover:text-blue-600'>Niveles</li>
-            <li className='nav-hov text-gray-600 hover:text-blue-600'>Propuesta</li>
-            <li className='nav-hov text-gray-600 hover:text-blue-600'>Contacto</li>
+            <li className='nav-hov text-gray-600 hover:text-blue-600 bree-font'>Inicio</li>
+            <li className='nav-hov text-gray-600 hover:text-blue-600 bree-font'>Niveles</li>
+            <li className='nav-hov text-gray-600 hover:text-blue-600 bree-font'>Propuesta</li>
+            <li className='nav-hov text-gray-600 hover:text-blue-600 bree-font'>Contacto</li>
           </ul>
         </div>
       </div>
