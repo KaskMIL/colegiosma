@@ -1,5 +1,6 @@
 /* stylelint-disable scss/at-rule-no-unknown */
 /* stylelint-disable at-rule-no-unknown */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fira+Sans:wght@200;700;900&family=Playfair+Display:wght@400;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,9 +8,13 @@
 @layer components {
   .nav-hov {
     @apply hover:text-white hover:scale-110 cursor-pointer;
-  }
+  };
 
   .comp-icons {
     @apply flex gap-5 items-center basis-1/2 px-[10px];
+  };
+
+  .bree-font {
+    font-family: 'Bree Serif', serif;
   }
 }
