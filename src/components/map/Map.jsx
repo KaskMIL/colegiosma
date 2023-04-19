@@ -8,8 +8,6 @@ const render = (status) => (
   <h1>{status}</h1>
 );
 
-const mapApi = process.env.REACT_APP_MAPS_API;
-
 const Map = () => {
   const ref = useRef();
 
@@ -28,7 +26,7 @@ const Map = () => {
 const MapComp = () => (
   <section className="flex flex-col justify-center items-center">
     <div className="border">
-      <Wrapper apiKey={mapApi} render={render}>
+      <Wrapper apiKey={process.env.REACT_APP_MAPS_API} render={render}>
         <Map />
       </Wrapper>
     </div>
