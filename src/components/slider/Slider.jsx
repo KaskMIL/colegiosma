@@ -1,8 +1,13 @@
 /* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable jsx-quotes */
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import bannerArte from '../../assets/img/banner-arte.png';
+import bannerCiencia from '../../assets/img/banner-cs.png';
+import bannerHistoria from '../../assets/img/banner-historia.png';
+import bannerDeporte from '../../assets/img/banner-dp.png';
 
 const Carousel = () => {
   const settings = {
@@ -14,18 +19,16 @@ const Carousel = () => {
     autoplay: true,
     adaptiveHeight: true,
     arrows: false,
-    pauseOnHover: true,
     autoplaySpeed: 3000,
   };
 
   return (
-    <section className="py-10 border text-center">
-      <h2>SLIDER BANNERS</h2>
+    <section>
       <Slider {...settings}>
-        <div className="bg-orange-500 flex items-center justify-center h-[200px]">Banner 1</div>
-        <div className="bg-orange-500 flex items-center justify-center h-[200px]">Banner 2</div>
-        <div className="bg-orange-500 flex items-center justify-center h-[200px]">Banner 3</div>
-        <div className="bg-orange-500 flex items-center justify-center h-[200px]">Banner 4</div>
+        <img className='max-heigth-[580px]' src={bannerArte} alt="Banner Artistica" />
+        <img className='max-heigth-[580px]' src={bannerHistoria} alt="Banner Historia" />
+        <img className='max-heigth-[580px]' src={bannerCiencia} alt="Banner Ciencia" />
+        <img className='max-heigth-[580px]' src={bannerDeporte} alt="Banner Deporte" />
       </Slider>
     </section>
   );
