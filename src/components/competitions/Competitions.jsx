@@ -16,22 +16,22 @@ const Competitions = () => (
         <div className="comp-icons">
           <img src={study} alt="child studing" height={300} width={200} />
           <GrLanguage />
-          <h2>Ingles</h2>
+          {/* <h2>Ingles</h2> */}
         </div>
         <div className="comp-icons">
           <img src={computer} alt="child studing" height={300} width={200} />
           <RiComputerLine />
-          <h2>Computación</h2>
+          {/* <h2>Computación</h2> */}
         </div>
         <div className="comp-icons">
           <img src={sport} alt="child studing" height={300} width={200} />
           <MdSportsSoccer />
-          <h2>Actividades Deportivas</h2>
+          {/* <h2>Actividades Deportivas</h2> */}
         </div>
         <div className="comp-icons">
           <img src={science} alt="child studing" height={300} width={200} />
           <GiMaterialsScience />
-          <h2>Taller de Ciencias</h2>
+          {/* <h2>Taller de Ciencias</h2> */}
         </div>
       </div>
     </div>
