@@ -1,41 +1,83 @@
-import React from 'react';
-import { GrLanguage } from 'react-icons/gr';
-import { MdSportsSoccer } from 'react-icons/md';
-import { RiComputerLine } from 'react-icons/ri';
-import { GiMaterialsScience } from 'react-icons/gi';
-import study from '../../assets/img/study-child.jpeg';
-import computer from '../../assets/img/computer-lab.jpeg';
-import sport from '../../assets/img/volley-img.jpeg';
-import science from '../../assets/img/map-science.jpeg';
+import React, { useState } from 'react';
 
-const Competitions = () => (
-  <section className="bg-green-400 text-center">
-    <h1>Competitions</h1>
-    <div className="bg-gray-400 flex justify-center items-center">
-      <div className="flex flex-wrap bg-yellow-400">
-        <div className="comp-icons">
-          <img src={study} alt="child studing" height={300} width={200} />
-          <GrLanguage />
-          {/* <h2>Ingles</h2> */}
+const Competitions = () => {
+  const [ingles, setIngles] = useState(false);
+  const [computacion, setComputacion] = useState(false);
+  const [taller, setTaller] = useState(false);
+  const [convivencia, setConvivencia] = useState(false);
+
+  return (
+    <section className="text-center h-screen bg-gray-600">
+      <article
+        className="grid grid-cols-1 md:grid-cols-2 h-screen p-5"
+      >
+        <div
+          className="competitions"
+          onMouseEnter={() => setIngles(true)}
+          onMouseLeave={() => setIngles(false)}
+        >
+          <div className="w-full h-full bg-green-600 flex justify-center items-center">
+            <h2 className="">Ingles</h2>
+          </div>
+          {
+            ingles ? (
+              <div className="absolute bg-gray-400 bottom-0 left-0 h-full w-full">
+                Something
+              </div>
+            ) : null
+          }
         </div>
-        <div className="comp-icons">
-          <img src={computer} alt="child studing" height={300} width={200} />
-          <RiComputerLine />
-          {/* <h2>Computación</h2> */}
+        <div
+          className="competitions"
+          onMouseEnter={() => setComputacion(true)}
+          onMouseLeave={() => setComputacion(false)}
+        >
+          <div className="w-full h-full bg-red-600 flex justify-center items-center">
+            <h2 className="">Computacion</h2>
+          </div>
+          {
+            computacion ? (
+              <div className="absolute bg-gray-400 bottom-0 left-0 h-full w-full">
+                Something
+              </div>
+            ) : null
+          }
         </div>
-        <div className="comp-icons">
-          <img src={sport} alt="child studing" height={300} width={200} />
-          <MdSportsSoccer />
-          {/* <h2>Actividades Deportivas</h2> */}
+        <div
+          className="competitions"
+          onMouseEnter={() => setTaller(true)}
+          onMouseLeave={() => setTaller(false)}
+        >
+          <div className="w-full h-full bg-blue-600 flex justify-center items-center">
+            <h2 className="">Talleres</h2>
+          </div>
+          {
+            taller ? (
+              <div className="absolute bg-gray-400 bottom-0 left-0 h-full w-full">
+                Something
+              </div>
+            ) : null
+          }
         </div>
-        <div className="comp-icons">
-          <img src={science} alt="child studing" height={300} width={200} />
-          <GiMaterialsScience />
-          {/* <h2>Taller de Ciencias</h2> */}
+        <div
+          className="competitions"
+          onMouseEnter={() => setConvivencia(true)}
+          onMouseLeave={() => setConvivencia(false)}
+        >
+          <div className="w-full h-full bg-yellow-400 flex justify-center items-center">
+            <h2 className="">Convivencia</h2>
+          </div>
+          {
+            convivencia ? (
+              <div className="absolute bg-gray-400 h-full w-full">
+                Something
+              </div>
+            ) : null
+          }
         </div>
-      </div>
-    </div>
-  </section>
-);
+      </article>
+    </section>
+  );
+};
 
 export default Competitions;
