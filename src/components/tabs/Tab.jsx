@@ -46,7 +46,7 @@ const Tab = () => {
   };
 
   return (
-    <section className='px-4 py-[30px]'>
+    <section className='px-4 py-[30px] bg-gray-600'>
       {/* Inician links */}
       <div className='flex'>
         <button
