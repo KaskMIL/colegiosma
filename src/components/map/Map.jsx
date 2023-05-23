@@ -24,7 +24,7 @@ const Map = () => {
 };
 
 const MapComp = () => (
-  <section className="flex flex-col justify-center items-center">
+  <section className="flex flex-col justify-center items-center bg-slate-200 p-5 shadow-xl">
     <div className="border">
       <Wrapper apiKey={process.env.REACT_APP_MAPS_API} render={render}>
         <Map />
