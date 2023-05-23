@@ -1,6 +1,7 @@
 /* stylelint-disable scss/at-rule-no-unknown */
 /* stylelint-disable at-rule-no-unknown */
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fira+Sans:wght@200;700;900&family=Playfair+Display:wght@400;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -41,7 +42,8 @@
 
   .bg-line {
     display: inline;
-    padding: 0.5em 0em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     background-color: rgba(255, 0, 255, 0.4);
     box-shadow: 0.5em 0 0 rgba(255, 0, 255, 0.4), -0.5em 0 0 rgba(255, 0, 255, 0.4);
     box-decoration-break: clone;
@@ -50,7 +52,8 @@
 
   .bg-line-res {
     display: inline;
-    padding: 0.2em 0em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
     background-color: rgba(255, 0, 255, 0.4);
     box-shadow: 0.2em 0 0 rgba(255, 0, 255, 0.4), -0.5em 0 0 rgba(255, 0, 255, 0.4);
     box-decoration-break: clone;
