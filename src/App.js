@@ -1,13 +1,19 @@
 import Header from './components/header/Header';
 import Carousel from './components/slider/Slider';
-import Niveles from './components/niveles/Niveles';
+import Tab from './components/tabs/Tab';
+import Competitions from './components/competitions/Competitions';
+import Contacto from './components/contact/Contacto';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <div className="bg-gray-600 h-screen">
+    <div className="h-screen">
       <Header />
       <Carousel />
-      <Niveles />
+      <Tab />
+      <Competitions />
+      <Contacto />
+      <Footer />
     </div>
   );
 }
