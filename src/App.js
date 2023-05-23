@@ -3,6 +3,7 @@ import Carousel from './components/slider/Slider';
 import Tab from './components/tabs/Tab';
 import Competitions from './components/competitions/Competitions';
 import Contacto from './components/contact/Contacto';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Tab />
       <Competitions />
       <Contacto />
+      <Footer />
     </div>
   );
 }
