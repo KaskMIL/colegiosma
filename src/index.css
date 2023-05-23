@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* stylelint-disable scss/at-rule-no-unknown */
+/* stylelint-disable at-rule-no-unknown */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fira+Sans:wght@200;700;900&family=Playfair+Display:wght@400;600;700;800;900&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-hov {
+    @apply hover:text-white hover:scale-110 cursor-pointer tracking-wider;
+  }
+
+  .comp-icons {
+    @apply flex gap-5 items-center basis-1/2 px-[10px];
+  }
+
+  .bree-font {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+  }
+
+  .navbar {
+    @apply flex flex-col items-center justify-center space-y-8 md:flex-row md:space-x-6 md:space-y-0 bg-red-500 py-3;
+  }
+
+  .tab-nav-neutral {
+    @apply flex-auto py-3 flex justify-center items-center gap-1 sm:gap-5 hover:border-t-8 hover:border-t-green-600 bg-white;
+  }
+
+  .tab-nav-active {
+    @apply font-bold sm:text-3xl border border-t-green-600 border-t-4 border-b-0 bg-slate-200;
+  }
+
+  .tab-nav-inactive {
+    @apply sm:text-xl text-gray-400 font-light;
+  }
+
+  .tab-nav-img {
+    @apply w-[25px] h-[25px] sm:w-[100px] sm:h-[100px];
+  }
+
+  .bg-line {
+    display: inline;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: rgba(255, 0, 255, 0.4);
+    box-shadow: 0.5em 0 0 rgba(255, 0, 255, 0.4), -0.5em 0 0 rgba(255, 0, 255, 0.4);
+    box-decoration-break: clone;
+    line-height: 2.5;
+  }
+
+  .bg-line-res {
+    display: inline;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    background-color: rgba(255, 0, 255, 0.4);
+    box-shadow: 0.2em 0 0 rgba(255, 0, 255, 0.4), -0.5em 0 0 rgba(255, 0, 255, 0.4);
+    box-decoration-break: clone;
+    line-height: 2;
+  }
+
+  .tab-sec-bg {
+    @apply p-5 bg-slate-200 shadow-xl;
+  }
+
+  .tab-title {
+    @apply font-bold sm:text-center text-xl sm:text-4xl sm:mb-4 leading-6;
+  }
+
+  .tab-ul {
+    @apply mb-4 text-sm sm:text-base list-disc sm:w-6/12;
+  }
+
+  .tab-p {
+    @apply text-justify bg-line-res sm:bg-line text-white;
+  }
+
+  .competitions {
+    @apply flex items-center justify-center text-white text-2xl tracking-[0.5rem] relative;
+  }
 }
